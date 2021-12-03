@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/index.js" type="module"></script>
+    <link rel="stylesheet" href="./css/anuncio.css">
+    <title>Mascotas</title>
+</head>
+<body>
+    <header >
+         <img src="./imagenes/logoNav.png" alt="logo" class="logo"> 
+        <nav>
+            <ul>
+                <li><a href="./index.html">Nosotros</a></li>
+                <li><a href="anuncios.html">Anuncios</a></li>
+                <li><a href="./paginas/blog.html">Blog</a></li>
+                <li><a href="./paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Administracion</h1>
+            <img src="./imagenes/portadaAnimales.png" id="portada"> 
+        <div>
+            <form action="" id="form">
+                <fieldset>
+                    <legend>Informacion del Anuncio</legend>
+
+                    <label for="titulo">TITULO: </label>
+                        <input name="titulo" type="text" id="titulo-form" placeholder="Titulo" required><br><br>
+                    
+                    <label for="descripcion">Descripcion:</label>
+                    <input type="text" name="descripcion" id="descripcion-form" placeholder="Descripcion" required><br><br>
+                    <div>
+                            <label for="animal">ANIMAL: </label>
+                            <input type="radio" id="perro" name="animal" value="perro" checked> Perro<br>
+                            <input type="radio"id="gato" name="animal" value="gato"> Gato<br>
+                    </div>
+                    <div>
+                        <label for="animal">EDAD: </label>
+                        <input type="radio" name="edad" id="mayor" value="mayor"> Mayor de 10 años<br>
+                        <input type="radio" name="edad" id="menor" value="menor"> Menor de 10 años<br>
+                    </div>
+                    <label for="precio">PRECIO: </label>
+                        <input name="precio" type="number"  id="precio-form" placeholder="Precio"><br><br>
+                    
+                    <div>
+                        <img src="./imagenes/perro.png" alt="raza" class="iconos">
+                        <input name="raza" type="text" id="raza-form" cols="30" rows="1" placeholder="raza" required><br>
+
+                        <img src="./imagenes/cigueña.png" alt="nacimiento" class="iconos">
+                        <input name="fecha" id="fecha-form" cols="30" rows="1" placeholder="dd/mm/aaaa" required><br>
+ 
+                        <img src="./imagenes/vacuna.png" alt="vacunas" class="iconos">
+                        <select class=""  name="vacuna" id="vacuna-form" required>
+                            <option id="vacunas" value="" disabled selected>---Elegir---</option>
+                            <option value="no" id="no">NO</option>
+                            <option value="si" id="si">SI</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" id="btnGuardar" value="Guardar"> 
+                    <input type="submit" id="btnEliminar" value="Eliminar"> 
+                    <input type="submit" id="btnModificar" value="Modificar"> 
+                </div>
+            </form> 
+            <div id ="divSpinner"></div>
+            <div id="divTablaAnuncios"></div>
+        </div>
+
+    </main>
+    <footer>
+        <nav>
+            <p>Todos los derechos reservados <date>2021</date> &copy</p>   
+            <ul>
+                <li><a href="./paginas/nosotros.html">Nosotros</a></li>
+                <li><a href="./paginas/anuncios.html">Anuncios</a></li>
+                <li><a href="./paginas/blog.html">Blog</a></li>
+                <li><a href="./paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
