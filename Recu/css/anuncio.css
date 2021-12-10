@@ -1,0 +1,220 @@
+body{
+    background-color: rgb(248, 245, 248);
+}
+
+
+header{
+    display: flex;
+    background-color: rgb(94, 5, 94);
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+}
+/*  nav y footer */
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: rgb(94, 5, 94);
+    display: flex; /* queda uno al lado del otro*/
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+}
+
+nav>ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: violet;
+    border: 2px solid black;
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+.logo{
+    height: 80px;
+    width: auto;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#portada{
+    width: 100%;
+    height: auto;
+}
+                                            /* FORMULARIO*/
+
+legend{
+    color: grey;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#form{
+    margin : 0 auto;
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input, select{
+    background-color: lightgrey;
+    border: solid lightgrey;
+    border-radius: 8px;
+    height: 25px;
+    width: 98%;
+    text-align: left;
+}
+
+#btnGuardar{
+    background-color: rgb(4, 119, 23);
+    border: 1px solid rgb(203, 221, 203);
+    background-image: url('../imagenes/guardar.png');
+}
+
+#btnEliminar{
+    background-color: rgb(197, 5, 5);
+    border: 1px solid rgb(66, 1, 1);
+    color: whitesmoke;
+}
+#btnModificar{
+    background-color: rgb(218, 110, 10);
+    border: 1px solid  rgb(218, 110, 10);
+    color: whitesmoke;
+}
+
+#btnIds{
+    background-color:violet;
+    border: 1px solid  violet;
+    color: black;
+}
+#btnGuardar, #btnEliminar, #btnModificar,#btnIds{
+    height: 45px;
+    width: 95px;
+    margin: 10px;
+    text-align: right;
+    font-size: 15px;
+    border-radius: 0px;
+    background-position: left;
+    background-size: 20px;
+    background-repeat:no-repeat;
+    cursor: pointer;
+}
+
+
+
+                                        /* p del footer*/
+p{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+table, tr, td, th{
+    border-collapse: collapse;
+    border: 2px solid violet;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+}
+table{
+    width: 100px;
+    margin: 0 auto;
+}
+
+td{
+    padding: 6px 12px;
+}
+th{
+    background-color: rgb(167, 27, 223);
+    color: whitesmoke;
+}
+
+                                    /*Iconos formularios*/
+.iconos{
+    width: 20px;
+    height: 20px;
+    justify-content: left;
+}
+
+                                        /* spinner */
+#spinner{
+    align-content : center;
+    width: auto;
+    height: 50px;
+}
+
+
+.alert {
+    padding: 20px;
+    color: black;
+    margin-bottom: 15px;
+  }
+.closebtn {
+    margin-left: 15px;
+    color: rgb(248, 245, 248);
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: center;
+  }
+/*mobile*/
+
+@media screen and (max-width :600px){
+    
+    h1{
+        visibility: hidden;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+ 
+    }
+
+    .logo{
+        visibility: hidden;
+    }
+    footer{
+        visibility: hidden;
+    }
+    #portada{
+        visibility: hidden;
+    }
+}

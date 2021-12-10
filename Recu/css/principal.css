@@ -1,0 +1,79 @@
+body{
+    background-image: url('../imagenes/perritos.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    background-color: rgb(94, 5, 94);
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+}
+/*  nav y footer */
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: rgb(94, 5, 94);
+    display: flex; /* queda uno al lado del otro*/
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+}
+
+nav>ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: violet;
+    border: 2px solid black;
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+.logo{
+    height: 80px;
+    width: auto;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    color: whitesmoke;
+}
+
+#divAnuncios{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.articulo{
+    background-color: rgb(94, 5, 94);
+    border: 2px solid thistle;
+    width: 400px;
+    margin: auto;
+    height: auto;
+
+}
+
+.texto{
+    font-size: 20;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
